@@ -1,8 +1,8 @@
-Duran Duran show set for US TV
+Duran Duran show set for <loc>US</loc> TV
 
-Chart stars Duran Duran are to appear in a VH1 special in the US including interviews and concert footage.
+Chart stars Duran Duran are to appear in a VH1 special in the <loc>US</loc> including interviews and concert footage.
 
-The show airs on Tuesday and will feature a studio performance, behind the scenes footage and fan interviews. "They seemed like a perfect fit with our audience," said Rick Krim, VH1's vice president of music and talent. The band recently released a new album, Astronaut, the first from the original line-up since 1983. They will also tour Japan and the US next year.
+The show airs on Tuesday and will feature a studio performance, behind the scenes footage and fan interviews. "They seemed like a perfect fit with our audience," said Rick Krim, VH1's vice president of music and talent. The band recently released a new album, Astronaut, the first from the original line-up since 1983. They will also tour <loc>Japan</loc> and the <loc>US</loc> next year.
 
 "When we started playing together, we didn't try and make a really sort of mature album. We just really wanted to make a great Duran Duran album," said keyboard player Nick Rhodes. "It's pretty much in line with a lot of stuff out there." Duran Duran are currently promoting the album's second single, What Happens Tomorrow.
 

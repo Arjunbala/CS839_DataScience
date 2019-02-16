@@ -1,6 +1,6 @@
-Branson show flops on US screens
+Branson show flops on <loc>US</loc> screens
 
-Entrepreneur Sir Richard Branson's US TV show, The Rebel Billionaire, is proving a flop in the ratings.
+Entrepreneur Sir Richard Branson's <loc>US</loc> TV show, The Rebel Billionaire, is proving a flop in the ratings.
 
 The programme suffered poor viewing figures on its debut on the Fox network three weeks ago, and has lost one in five of its viewers since then. The show is seen as Fox's answer to The Apprentice featuring tycoon Donald Trump, a ratings hit for rivals NBC. Sir Richard's show sees a group of young entrepreneurs compete to become the president of his business empire. The Rebel Billionaire has averaged five million viewers and is 91st in the rankings of all prime-time shows. The Apprentice, which has already completed its first season, is still managing to pull in 16 million viewers, while its prime-time ranking is number four.
 
