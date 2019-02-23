@@ -1,5 +1,8 @@
 import nltk
 import re
+import numpy as np
+import pandas as pd
+from feature_vec import get_feature_vec
 
 
 def tokenize_candidates(doc):
@@ -10,7 +13,6 @@ def tokenize_candidates(doc):
     :return: list, the list of candidate tokens of length 1, 2, 3 and 4
     """
     tokens = nltk.word_tokenize(doc)
-    print(tokens)
 
     candidates = []
     for idx, token in zip(range(len(tokens)), tokens):
@@ -30,11 +32,7 @@ def tokenize_candidates(doc):
 
 
 def convert_integer_file_number_to_string(file_number):
-    if file_number <= 9:
-        return "00" + str(file_number)
-    elif file_number <= 99:
-        return "0" + str(file_number)
-    return str(file_number)
+    return '{0:03d}'.format(file_number)
 
 
 def get_document_string(file_type, file_number):
@@ -65,13 +63,36 @@ def fetch_annotated_tokens(file_number):
     return annotated_tokens
 
 
-def main():
-    # Test API
-    annotated_tokens = fetch_annotated_tokens(113)
-    print(annotated_tokens)
+def label_dataset():
+    X = []
+    y = []
 
-    print('Testing tokenize_candidates()')
-    print(tokenize_candidates(get_document_string('raw', 113)))
+    for filenum in range(1, 300):
+        # print(filenum)
+        doc_str = get_document_string('raw', filenum)
+        candidates = tokenize_candidates(doc_str)
+        annotated_tokens = fetch_annotated_tokens(filenum)
+        for candidate in candidates:
+            # X.append(get_feature_vec(candidate))
+            X.append(candidate)
+            if candidate in annotated_tokens:
+                y.append(1)
+            else:
+                y.append(0)
+
+    return pd.DataFrame({'X': X, 'y': y})
+
+
+def main():
+    dataset = label_dataset()
+    print(dataset[dataset['y'] == 1])
+
+    # Test API
+    # annotated_tokens = fetch_annotated_tokens(113)
+    # print(annotated_tokens)
+    #
+    # print('Testing tokenize_candidates()')
+    # print(tokenize_candidates(get_document_string('raw', 113)))
 
 
 if __name__ == "__main__":
