@@ -10,24 +10,33 @@ def tokenize_candidates(doc):
     :return: list, the list of candidate tokens of length 1, 2, 3 and 4
     """
     tokens = nltk.word_tokenize(doc)
-    print(tokens)
+    #print(tokens)
 
     candidates = []
     for idx, token in zip(range(len(tokens)), tokens):
         # Add length one tokens
-        candidates.append(token)
+        candidates.append([get_prefix_token(tokens,idx), token, get_suffix_token(tokens,idx)])
         # Add length two tokens
         if idx - 1 >= 0:
-            candidates.append(tokens[idx - 1] + ' ' + token)
+            candidates.append([get_prefix_token(tokens,idx-1), tokens[idx - 1] + ' ' + token, get_suffix_token(tokens,idx)])
         # Add length two tokens
         if idx - 2 >= 0:
-            candidates.append(tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx])
+            candidates.append([get_prefix_token(tokens,idx-2), tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx], get_suffix_token(tokens,idx)])
         # Add length two tokens
         if idx - 3 >= 0:
-            candidates.append(tokens[idx - 3] + ' ' + tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx])
+            candidates.append([get_prefix_token(tokens,idx-3), tokens[idx - 3] + ' ' + tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx], get_suffix_token(tokens,idx)])
 
     return candidates
 
+def get_prefix_token(tokens, index):
+    if index == 0:
+        return ''
+    return tokens[index-1]
+
+def get_suffix_token(tokens, index):
+    if index == len(tokens)-1:
+        return ''
+    return tokens[index+1]
 
 def convert_integer_file_number_to_string(file_number):
     if file_number <= 9:
