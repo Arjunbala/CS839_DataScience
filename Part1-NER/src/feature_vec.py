@@ -9,7 +9,7 @@ possible_location_suffixes = []
 
 def get_feature_vec(candidate):
     """
-    
+
     :param candidate:
     :return:
     """
