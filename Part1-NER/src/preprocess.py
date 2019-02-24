@@ -5,7 +5,7 @@ import pandas as pd
 from feature_vec import get_feature_vec
 
 
-def label_dataset():
+def label_dataset(file_list):
     """
     For each word, labels it as 1 if it is a location, else 0. Also transforms the word to its feature vector
     :return: DataFrame, 1st column: feature vector of the word, 2nd column: label indicating location or not
@@ -13,7 +13,7 @@ def label_dataset():
     X = []
     y = []
 
-    for filenum in range(1, 301):
+    for filenum in file_list:
         # print(filenum)
         doc_str = get_document_string('raw', filenum)
         candidates = tokenize_candidates(doc_str)
