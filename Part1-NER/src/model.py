@@ -68,11 +68,11 @@ def train_svm(X_train, y_train, X_test, y_test):
 
 
 def main():
-        dev_set, test_set = get_file_numbers()
-        kf = KFold(n_splits=4)
-        kf.get_n_splits(dev_set)
-        for train_indices, validation_indices in kf.split(dev_set):
-                pass
+	dev_set, test_set = get_file_numbers()
+	kf = KFold(n_splits=4)
+	kf.get_n_splits(dev_set)
+	for train_indices, validation_indices in kf.split(dev_set):
+		pass
 
 
 if __name__ == "__main__":
