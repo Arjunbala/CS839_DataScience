@@ -1,7 +1,7 @@
 import nltk
 import numpy as np
 import pandas as pd
-from preprocess import get_file_numbers
+from preprocess import get_file_numbers, label_dataset
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import KFold
@@ -72,7 +72,20 @@ def main():
 	kf = KFold(n_splits=4)
 	kf.get_n_splits(dev_set)
 	for train_indices, validation_indices in kf.split(dev_set):
-		pass
+		train_points = []
+		validation_points = []
+		for idx in train_indices:
+			train_points.append(dev_set[idx])
+		for idx in validation_indices:
+			validation_points.append(dev_set[idx])
+
+		train_set = label_dataset(train_points)
+		validation_set = label_dataset(validation_points)
+
+		print('Decision Tree accuracy:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('Random Forest accuracy:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('Logistic Regression accuracy:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('SVM accuracy:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
 
 
 if __name__ == "__main__":
