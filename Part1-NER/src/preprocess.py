@@ -132,10 +132,21 @@ def fetch_annotated_tokens(file_number):
         annotated_tokens.append(document_string[start_positions[i].end():end_positions[i].start()])
     return annotated_tokens
 
+def get_file_numbers():
+    filename = "shuffled_file_numbers.txt"
+    entire_list = []
+    with open(filename) as f:
+        for line in f:
+            content = line.strip()
+            entire_list.append(int(content))
+    return entire_list[0:200],entire_list[200:300]
 
 def main():
-    dataset = label_dataset()
-    print(dataset[dataset['y'] == 1])
+    d,v = get_file_numbers()
+    print(len(d))
+    print(len(v))
+    #dataset = label_dataset()
+    #print(dataset[dataset['y'] == 1])
 
     # Test API
     # annotated_tokens = fetch_annotated_tokens(113)
