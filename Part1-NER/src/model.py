@@ -1,8 +1,10 @@
 import nltk
 import numpy as np
 import pandas as pd
+from preprocess import get_file_numbers
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import KFold
 
 
 def train_logistic_regression(X_train, y_train, X_test, y_test):
@@ -34,7 +36,11 @@ def train_svm(X_train, y_train, X_test, y_test):
 
 
 def main():
-	pass
+        dev_set, test_set = get_file_numbers()
+        kf = KFold(n_splits=4)
+        kf.get_n_splits(dev_set)
+        for train_indices, validation_indices in kf.split(dev_set):
+                pass
 
 
 if __name__ == "__main__":
