@@ -1,4 +1,4 @@
-DVD review: Harry Potter and the Prisoner of Azkaban
+DVD review: Harry Potter and the Prisoner of <loc>Azkaban</loc>
 
 This third Harry Potter film brought a change of director and a dramatic visual shake-up that really shines on DVD.
 

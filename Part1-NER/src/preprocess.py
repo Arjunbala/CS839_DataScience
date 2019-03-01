@@ -1,11 +1,10 @@
 import nltk
 import re
 import numpy as np
-import pandas as pd
 from feature_vec import get_feature_vec
 
 
-def label_dataset():
+def label_dataset(file_list):
     """
     For each word, labels it as 1 if it is a location, else 0. Also transforms the word to its feature vector
     :return: DataFrame, 1st column: feature vector of the word, 2nd column: label indicating location or not
@@ -13,20 +12,20 @@ def label_dataset():
     X = []
     y = []
 
-    for filenum in range(1, 301):
+    for filenum in file_list:
         # print(filenum)
         doc_str = get_document_string('raw', filenum)
         candidates = tokenize_candidates(doc_str)
         annotated_tokens = fetch_annotated_tokens(filenum)
         for candidate in candidates:
-            # X.append(get_feature_vec(candidate))
-            X.append(candidate[1])
+            X.append(get_feature_vec(candidate))
+            # X.append(candidate[1])
             if candidate[1] in annotated_tokens:
                 y.append(1)
             else:
                 y.append(0)
 
-    return pd.DataFrame({'X': X, 'y': y})
+    return np.asarray(X), np.asarray(y)
 
 
 def tokenize_candidates(doc):
@@ -133,9 +132,22 @@ def fetch_annotated_tokens(file_number):
     return annotated_tokens
 
 
+def get_file_numbers():
+    filename = "shuffled_file_numbers.txt"
+    entire_list = []
+    with open(filename) as f:
+        for line in f:
+            content = line.strip()
+            entire_list.append(int(content))
+    return entire_list[0:200], entire_list[200:300]
+
+
 def main():
-    dataset = label_dataset()
-    print(dataset[dataset['y'] == 1])
+    d, v = get_file_numbers()
+    print(len(d))
+    print(len(v))
+    # dataset = label_dataset()
+    # print(dataset[dataset['y'] == 1])
 
     # Test API
     # annotated_tokens = fetch_annotated_tokens(113)

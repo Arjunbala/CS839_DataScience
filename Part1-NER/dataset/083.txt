@@ -1,6 +1,6 @@
-Cage film's third week at US top
+Cage film's third week at <loc>US</loc> top
 
-Nicolas Cage movie National Treasure has topped the US and Canada box office for the third week in a row.
+Nicolas Cage movie National Treasure has topped the <loc>US</loc> and <loc>Canada</loc> box office for the third week in a row.
 
 National Treasure made $17.1m (£8.8m) in ticket sales from Friday to Sunday, according to studio estimates, taking its total to $110.2m (£56.7m). Comedy Christmas with the Kranks, starring Tim Allen and Jamie Lee Curtis, was in second place. The Polar Express entered in third place while Jude Law film Closer made its debut at number six.
 

@@ -18,7 +18,7 @@ def get_feature_vec(candidate):
     features.extend(get_number_of_tokens(candidate))
     features.append(get_prefix_class(candidate))
     features.append(get_suffix_class(candidate))
-    print(features)
+    # print(features)
     return np.asarray(features)
 
 
