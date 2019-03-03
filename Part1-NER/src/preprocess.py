@@ -57,16 +57,16 @@ def tokenize_candidates(doc):
         if idx - 1 >= 0:
             candidates.append(
                 [get_prefix_token(tokens, idx - 1), tokens[idx - 1] + ' ' + token, get_suffix_token(tokens, idx)])
-        # Add length two tokens
-        if idx - 2 >= 0:
-            candidates.append(
-                [get_prefix_token(tokens, idx - 2), tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx],
-                 get_suffix_token(tokens, idx)])
-        # Add length two tokens
-        if idx - 3 >= 0:
-            candidates.append([get_prefix_token(tokens, idx - 3),
-                               tokens[idx - 3] + ' ' + tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx],
-                               get_suffix_token(tokens, idx)])
+        # # Add length three tokens
+        # if idx - 2 >= 0:
+        #     candidates.append(
+        #         [get_prefix_token(tokens, idx - 2), tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx],
+        #          get_suffix_token(tokens, idx)])
+        # # Add length four tokens
+        # if idx - 3 >= 0:
+        #     candidates.append([get_prefix_token(tokens, idx - 3),
+        #                        tokens[idx - 3] + ' ' + tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx],
+        #                        get_suffix_token(tokens, idx)])
 
     return candidates
 

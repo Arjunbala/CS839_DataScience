@@ -1,7 +1,7 @@
 import numpy as np
 
 # Everything else is garbage prefix
-possible_location_prefixes = ['at', 'in', 'of', 'North', 'South', 'East', 'West']   # case?
+possible_location_prefixes = ['at', 'in', 'of', 'the']   # case?
 
 # Everything else is garbage suffix
 possible_location_suffixes = ['based']
