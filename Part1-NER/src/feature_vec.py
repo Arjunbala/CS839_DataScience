@@ -1,3 +1,4 @@
+import io
 import numpy as np
 
 # Everything else is garbage prefix
@@ -7,12 +8,37 @@ possible_location_prefixes = ['at', 'in', 'of', 'the']   # case?
 possible_location_suffixes = ['based']
 
 
+# Get word vectors from vocabulary (glove, word2vec, fasttext ..)
+def get_wordvec(path_to_vec):
+    word_vec = {}
+
+    with io.open(path_to_vec, 'r', encoding='utf-8') as f:
+        # if word2vec or fasttext file : skip first line "next(f)"
+        for line in f:
+            word, vec = line.split(' ', 1)
+            word_vec[word] = np.fromstring(vec, sep=' ')
+
+    return word_vec
+
+word_vecs = get_wordvec('glove.6B.50d.txt')
+
+
 def get_feature_vec(candidate):
     """
 
     :param candidate:
     :return:
     """
+    features = np.zeros(50)
+    count = 0
+    for tok in candidate[1].split():
+        if tok.lower() in word_vecs:
+            features = np.add(features, word_vecs[tok.lower()])
+            count += 1
+    if count > 0:
+        return features / count
+    else:
+        return np.zeros(50)
     features = []
     features.append(is_capitalized(candidate))
     features.extend(get_number_of_tokens(candidate))
