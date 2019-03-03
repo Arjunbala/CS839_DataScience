@@ -5,8 +5,11 @@ from feature_vec import get_feature_vec
 
 
 def should_drop_candidate(candidate):
+    stopwords = ["the", "a", "an", "i", "is", "if", "he", "her", "my","mr","mr.","mrs","mrs.","dr","dr."]
     # First letter of every word should be capital
     words = candidate[1].split(' ')
+    if words[0].lower() in stopwords:
+        return True
     for word in words:
         if not word[0].isupper():
             return True
@@ -20,7 +23,6 @@ def label_dataset(file_list):
     """
     X = []
     y = []
-
     for filenum in file_list:
         # print(filenum)
         doc_str = get_document_string('raw', filenum)
@@ -58,6 +60,7 @@ def tokenize_candidates(doc):
             candidates.append(
                 [get_prefix_token(tokens, idx - 1), tokens[idx - 1] + ' ' + token, get_suffix_token(tokens, idx)])
         # Add length two tokens
+        '''
         if idx - 2 >= 0:
             candidates.append(
                 [get_prefix_token(tokens, idx - 2), tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx],
@@ -67,7 +70,7 @@ def tokenize_candidates(doc):
             candidates.append([get_prefix_token(tokens, idx - 3),
                                tokens[idx - 3] + ' ' + tokens[idx - 2] + ' ' + tokens[idx - 1] + ' ' + tokens[idx],
                                get_suffix_token(tokens, idx)])
-
+        '''
     return candidates
 
 
