@@ -4,6 +4,15 @@ import numpy as np
 from feature_vec import get_feature_vec
 
 
+def should_drop_candidate(candidate):
+    # First letter of every word should be capital
+    words = candidate[1].split(' ')
+    for word in words:
+        if not word[0].isupper():
+            return True
+    return False
+
+
 def label_dataset(file_list):
     """
     For each word, labels it as 1 if it is a location, else 0. Also transforms the word to its feature vector
@@ -18,13 +27,15 @@ def label_dataset(file_list):
         candidates = tokenize_candidates(doc_str)
         annotated_tokens = fetch_annotated_tokens(filenum)
         for candidate in candidates:
+            # Preprocessing
+            if should_drop_candidate(candidate):
+                continue
             X.append(get_feature_vec(candidate))
             # X.append(candidate[1])
             if candidate[1] in annotated_tokens:
                 y.append(1)
             else:
                 y.append(0)
-
     return np.asarray(X), np.asarray(y)
 
 
