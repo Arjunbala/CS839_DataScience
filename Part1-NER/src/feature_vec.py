@@ -1,10 +1,10 @@
 import numpy as np
 
 # Everything else is garbage prefix
-possible_location_prefixes = ['at', 'in', 'of']
+possible_location_prefixes = ['at', 'in', 'of', 'North', 'South', 'East', 'West']   # case?
 
 # Everything else is garbage suffix
-possible_location_suffixes = []
+possible_location_suffixes = ['based']
 
 
 def get_feature_vec(candidate):

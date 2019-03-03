@@ -9,6 +9,7 @@ from sklearn import tree
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import precision_recall_fscore_support
 
 
 def train_decision_tree(X_train, y_train, X_test, y_test):
@@ -18,11 +19,12 @@ def train_decision_tree(X_train, y_train, X_test, y_test):
 	:param y_train: list, class labels for training
 	:param X_test: ndarray, feature vectors for candidates for testing
 	:param y_test: list, class labels for testing
-	:return: float, accuracy of the decision tree
+	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
 	dt_clf = tree.DecisionTreeClassifier()
 	dt_clf.fit(X_train, y_train)
-	return dt_clf.score(X_test, y_test)
+	predictions = dt_clf.predict(X_test)
+	return precision_recall_fscore_support(y_test, predictions, average='binary')		# dt_clf.score(X_test, y_test),
 
 
 def train_random_forest(X_train, y_train, X_test, y_test):
@@ -32,11 +34,12 @@ def train_random_forest(X_train, y_train, X_test, y_test):
 	:param y_train: list, class labels for training
 	:param X_test: ndarray, feature vectors for candidates for testing
 	:param y_test: list, class labels for testing
-	:return: float, accuracy of the random forest model
+	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
 	randomforest_clf = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
 	randomforest_clf.fit(X_train, y_train)
-	return randomforest_clf.score(X_test, y_test)
+	predictions = randomforest_clf.predict(X_test)
+	return precision_recall_fscore_support(y_test, predictions, average='binary')  # randomforest_clf.score(X_test, y_test)
 
 
 def train_logistic_regression(X_train, y_train, X_test, y_test):
@@ -46,11 +49,12 @@ def train_logistic_regression(X_train, y_train, X_test, y_test):
 	:param y_train: list, class labels for training
 	:param X_test: ndarray, feature vectors for candidates for testing
 	:param y_test: list, class labels for testing
-	:return: float, accuracy of the logistic regression model
+	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
 	logistic_clf = LogisticRegression()
 	logistic_clf.fit(X_train, y_train)
-	return logistic_clf.score(X_test, y_test)
+	predictions = logistic_clf.predict(X_test)
+	return precision_recall_fscore_support(y_test, predictions, average='binary')  # logistic_clf.score(X_test, y_test)
 
 
 def train_svm(X_train, y_train, X_test, y_test):
@@ -60,11 +64,12 @@ def train_svm(X_train, y_train, X_test, y_test):
 	:param y_train: list, class labels for training
 	:param X_test: ndarray, feature vectors for candidates for testing
 	:param y_test: list, class labels for training
-	:return: float, accuracy of the SVM model
+	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
 	svm_clf = SVC()
 	svm_clf.fit(X_train, y_train)
-	return svm_clf.score(X_test, y_test)
+	predictions = svm_clf.predict(X_test)
+	return precision_recall_fscore_support(y_test, predictions, average='binary')  # svm_clf.score(X_test, y_test)
 
 
 def main():
@@ -82,10 +87,10 @@ def main():
 		train_set = label_dataset(train_points)
 		validation_set = label_dataset(validation_points)
 
-		print('Decision Tree accuracy:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-		print('Random Forest accuracy:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-		print('Logistic Regression accuracy:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-		print('SVM accuracy:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('Logistic Regression:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+		print('SVM:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
 
 
 if __name__ == "__main__":
