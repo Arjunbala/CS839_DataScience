@@ -5,7 +5,7 @@ from feature_vec import get_feature_vec
 
 
 def should_drop_candidate(candidate):
-    stopwords = ["the", "a", "an", "i", "is", "if", "he", "her", "my","mr","mr.","mrs","mrs.","dr","dr."]
+    stopwords = ["get", "this", "that", "these", "hey", "we", "the", "a", "an", "i", "is", "if", "it", "he", "his", "her", "my","mr","mr.","mrs","mrs.","dr","dr.","monday","tuesday","wednesday","thursday","friday","saturday","sunday","sir"]
     # First letter of every word should be capital
     words = candidate[1].split(' ')
     if words[0].lower() in stopwords:
