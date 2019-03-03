@@ -43,7 +43,7 @@ def get_length_of_individual_tokens(candidates):
 
 
 def get_prefix_class(candidate):
-    if candidate[0] in possible_location_prefixes:
+    if candidate[0].lower() in possible_location_prefixes:
         return 1
     return 0
 
@@ -64,3 +64,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
