@@ -5,7 +5,7 @@ from feature_vec import get_feature_vec
 
 
 def should_drop_candidate(candidate):
-    stopwords = ["get", "this", "that", "these", "hey", "we", "the", "a", "an", "i", "is", "if", "it", "he", "his", "her", "my","mr","mr.","mrs","mrs.","dr","dr.","monday","tuesday","wednesday","thursday","friday","saturday","sunday","sir"]
+    stopwords = ["get", "this", "that", "these", "hey", "we", "the", "a", "an", "i", "is", "if", "it", "he", "his", "her", "my","monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
     # First letter of every word should be capital
     words = candidate[1].split(' ')
     if words[0].lower() in stopwords:
@@ -16,13 +16,15 @@ def should_drop_candidate(candidate):
     return False
 
 
-def label_dataset(file_list):
+def label_dataset(file_list, isTraining):
     """
     For each word, labels it as 1 if it is a location, else 0. Also transforms the word to its feature vector
     :return: DataFrame, 1st column: feature vector of the word, 2nd column: label indicating location or not
     """
-    X = []
-    y = []
+    X_pos = []
+    y_pos = []
+    X_neg = []
+    y_neg = []
     for filenum in file_list:
         # print(filenum)
         doc_str = get_document_string('raw', filenum)
@@ -32,12 +34,22 @@ def label_dataset(file_list):
             # Preprocessing
             if should_drop_candidate(candidate):
                 continue
-            X.append(get_feature_vec(candidate))
             # X.append(candidate[1])
             if candidate[1] in annotated_tokens:
-                y.append(1)
+                X_pos.append(get_feature_vec(candidate))
+                y_pos.append(1)
             else:
-                y.append(0)
+                X_neg.append(get_feature_vec(candidate))
+                y_neg.append(0)
+    if isTraining:
+        X_neg = X_neg[0:2*len(X_pos)]
+        y_neg = y_neg[0:2*len(X_pos)]
+    X = []
+    X.extend(X_neg)
+    X.extend(X_pos)
+    y = []
+    y.extend(y_neg)
+    y.extend(y_pos)
     return np.asarray(X), np.asarray(y)
 
 
