@@ -85,6 +85,7 @@ def main():
 			validation_points.append(dev_set[idx])
 
 		train_set = label_dataset(train_points)
+		np.savetxt("train.csv", np.column_stack((train_set[0], train_set[1])), delimiter=",")
 		validation_set = label_dataset(validation_points)
 
 		print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
