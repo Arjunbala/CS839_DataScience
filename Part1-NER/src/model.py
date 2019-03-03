@@ -84,9 +84,9 @@ def main():
 		for idx in validation_indices:
 			validation_points.append(dev_set[idx])
 
-		train_set = label_dataset(train_points)
+		train_set = label_dataset(train_points, True)
 		np.savetxt("train.csv", np.column_stack((train_set[0], train_set[1])), delimiter=",")
-		validation_set = label_dataset(validation_points)
+		validation_set = label_dataset(validation_points, False)
 
 		print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
 		print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
