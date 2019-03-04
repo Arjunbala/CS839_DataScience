@@ -21,10 +21,9 @@ def label_dataset(file_list, isTraining):
     For each word, labels it as 1 if it is a location, else 0. Also transforms the word to its feature vector
     :return: DataFrame, 1st column: feature vector of the word, 2nd column: label indicating location or not
     """
-    X_pos = []
-    y_pos = []
-    X_neg = []
-    y_neg = []
+    X = []
+    y = []
+    actual_words = []
     for filenum in file_list:
         # print(filenum)
         doc_str = get_document_string('raw', filenum)
@@ -36,21 +35,14 @@ def label_dataset(file_list, isTraining):
                 continue
             # X.append(candidate[1])
             if candidate[1] in annotated_tokens:
-                X_pos.append(get_feature_vec(candidate))
-                y_pos.append(1)
+                actual_words.append(candidate[1])
+                X.append(get_feature_vec(candidate))
+                y.append(1)
             else:
-                X_neg.append(get_feature_vec(candidate))
-                y_neg.append(0)
-    #if isTraining:
-    #    X_neg = X_neg[0:20*len(X_pos)]
-    #    y_neg = y_neg[0:20*len(X_pos)]
-    X = []
-    X.extend(X_neg)
-    X.extend(X_pos)
-    y = []
-    y.extend(y_neg)
-    y.extend(y_pos)
-    return np.asarray(X), np.asarray(y)
+                actual_words.append(candidate[1])
+                X.append(get_feature_vec(candidate))
+                y.append(0)
+    return np.asarray(X), np.asarray(y), actual_words
 
 
 def tokenize_candidates(doc):

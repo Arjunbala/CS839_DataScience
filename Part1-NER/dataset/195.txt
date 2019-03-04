@@ -1,6 +1,6 @@
 <loc>US</loc> TV special for tsunami relief
 
-A <loc>US</loc> television network will screen a celebrity TV special to benefit the tsunami relief effort in South <loc>Asia</loc>.
+A <loc>US</loc> television network will screen a celebrity TV special to benefit the tsunami relief effort in <loc>South Asia</loc>.
 
 NBC will encourage viewer donations during an hour-long show featuring musical performances on 15 January. Actress Sandra Bullock has donated $1m (£525,000) to The American Red Cross and actor Leonardo DiCaprio pledged a "sizable" aid contribution to Unicef. Meanwhile 70 <loc>Hong Kong</loc> music and movie stars re-recorded We Are the World in Mandarin and Cantonese to raise funds.
 

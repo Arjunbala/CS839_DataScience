@@ -57,7 +57,7 @@ def train_logistic_regression(X_train, y_train, X_test, y_test):
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # logistic_clf.score(X_test, y_test)
 
 
-def train_svm(X_train, y_train, X_test, y_test):
+def train_svm(X_train, y_train, actual_candidates, X_test, y_test):
 	"""
 	Trains n SVM model on the training data and returns the accuracy on the testing data
 	:param X_train: ndarray, feature vectors for candidates for training
@@ -69,7 +69,14 @@ def train_svm(X_train, y_train, X_test, y_test):
 	svm_clf = SVC(gamma='auto')
 	svm_clf.fit(X_train, y_train)
 	predictions = svm_clf.predict(X_test)
+	find_false_positives(actual_candidates, y_test, predictions)
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # svm_clf.score(X_test, y_test)
+
+
+def find_false_positives(actual_candidates, y_test, predictions):
+	for i in range(0, len(predictions)):
+		if predictions[i] != y_test[i]:
+			print(actual_candidates[i] + " pred->" + str(predictions[i]) +" actual->" + str(y_test[i]))
 
 
 def main():
@@ -92,7 +99,7 @@ def main():
                 print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
                 print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
                 print('Logistic Regression:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-                print('SVM:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                print('SVM:', train_svm(train_set[0], train_set[1], validation_set[2], validation_set[0], validation_set[1]))
                 print()
 
 if __name__ == "__main__":
