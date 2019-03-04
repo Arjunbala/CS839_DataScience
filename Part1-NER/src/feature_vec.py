@@ -29,26 +29,24 @@ def get_feature_vec(candidate):
     :param candidate:
     :return:
     """
-    features = np.zeros(50)
+    features = np.zeros(58)
     count = 0
     for tok in candidate[1].split():
         if tok.lower() in word_vecs:
-            features = np.add(features, word_vecs[tok.lower()])
+            features[0:50] = np.add(features[0:50], word_vecs[tok.lower()])
             count += 1
     if count > 0:
-        return features / count
+        features = features / count
     else:
-        return np.zeros(50)
-    features = []
-    features.append(is_capitalized(candidate))
-    features.extend(get_number_of_tokens(candidate))
-    features.append(get_prefix_class(candidate))
-    features.append(get_suffix_class(candidate))
-    features.append(is_suffix_capital(candidate))
-    features.append(is_prefix_capital(candidate))
-    features.append(is_prob_name(candidate))
-    #print(features)
-    return np.asarray(features)
+        features = np.zeros(58)
+    features[50] = is_capitalized(candidate)
+    features[51] = get_prefix_class(candidate)
+    features[52:54] = get_number_of_tokens(candidate)
+    features[54] = get_suffix_class(candidate)
+    features[55] = is_suffix_capital(candidate)
+    features[56] = is_prefix_capital(candidate)
+    features[57] = is_prob_name(candidate)
+    return features
 
 def is_prob_name(candidate):
     name_prob = ["Mr", "Mrs", "Ms", "Dr"]
