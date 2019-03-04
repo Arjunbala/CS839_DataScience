@@ -51,7 +51,7 @@ def train_logistic_regression(X_train, y_train, X_test, y_test):
 	:param y_test: list, class labels for testing
 	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
-	logistic_clf = LogisticRegression()
+	logistic_clf = LogisticRegression(solver='liblinear')
 	logistic_clf.fit(X_train, y_train)
 	predictions = logistic_clf.predict(X_test)
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # logistic_clf.score(X_test, y_test)
@@ -66,7 +66,7 @@ def train_svm(X_train, y_train, X_test, y_test):
 	:param y_test: list, class labels for training
 	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
-	svm_clf = SVC()
+	svm_clf = SVC(gamma='auto')
 	svm_clf.fit(X_train, y_train)
 	predictions = svm_clf.predict(X_test)
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # svm_clf.score(X_test, y_test)
@@ -77,22 +77,23 @@ def main():
 	kf = KFold(n_splits=4)
 	kf.get_n_splits(dev_set)
 	for train_indices, validation_indices in kf.split(dev_set):
-		train_points = []
-		validation_points = []
-		for idx in train_indices:
-			train_points.append(dev_set[idx])
-		for idx in validation_indices:
-			validation_points.append(dev_set[idx])
+                print("## Model ####")
+                train_points = []
+                validation_points = []
+                for idx in train_indices:
+                    train_points.append(dev_set[idx])
+                for idx in validation_indices:
+                    validation_points.append(dev_set[idx])
 
-		train_set = label_dataset(train_points, True)
-		np.savetxt("train.csv", np.column_stack((train_set[0], train_set[1])), delimiter=",")
-		validation_set = label_dataset(validation_points, False)
+                train_set = label_dataset(train_points, True)
+                np.savetxt("train.csv", np.column_stack((train_set[0], train_set[1])), delimiter=",")
+                validation_set = label_dataset(validation_points, False)
 
-		print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-		print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-		print('Logistic Regression:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-		print('SVM:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-
+                print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                print('Logistic Regression:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                print('SVM:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                print()
 
 if __name__ == "__main__":
 	main()

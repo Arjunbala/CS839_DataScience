@@ -41,9 +41,9 @@ def label_dataset(file_list, isTraining):
             else:
                 X_neg.append(get_feature_vec(candidate))
                 y_neg.append(0)
-    if isTraining:
-        X_neg = X_neg[0:20*len(X_pos)]
-        y_neg = y_neg[0:20*len(X_pos)]
+    #if isTraining:
+    #    X_neg = X_neg[0:20*len(X_pos)]
+    #    y_neg = y_neg[0:20*len(X_pos)]
     X = []
     X.extend(X_neg)
     X.extend(X_pos)
