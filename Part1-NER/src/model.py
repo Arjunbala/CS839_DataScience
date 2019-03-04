@@ -66,7 +66,8 @@ def train_svm(X_train, y_train, X_test, y_test):
 	:param y_test: list, class labels for training
 	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
-	svm_clf = SVC(gamma='auto')
+	class_wts = 'balanced'	# {0: 1, 1: 10000}
+	svm_clf = SVC(gamma='scale')
 	svm_clf.fit(X_train, y_train)
 	predictions = svm_clf.predict(X_test)
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # svm_clf.score(X_test, y_test)
@@ -89,9 +90,9 @@ def main():
                 np.savetxt("train.csv", np.column_stack((train_set[0], train_set[1])), delimiter=",")
                 validation_set = label_dataset(validation_points, False)
 
-                print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-                print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
-                print('Logistic Regression:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                # print('Decision Tree:', train_decision_tree(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                # print('Random Forest:', train_random_forest(train_set[0], train_set[1], validation_set[0], validation_set[1]))
+                # print('Logistic Regression:', train_logistic_regression(train_set[0], train_set[1], validation_set[0], validation_set[1]))
                 print('SVM:', train_svm(train_set[0], train_set[1], validation_set[0], validation_set[1]))
                 print()
 
