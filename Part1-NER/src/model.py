@@ -12,6 +12,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import precision_recall_fscore_support
 
 
+white_list = ['New York', 'Los Angeles']
+
+
 def train_decision_tree(X_train, y_train, X_test, y_test):
 	"""
 	Trains a decision tree model on the training data and returns the accuracy on the testing data
@@ -70,6 +73,12 @@ def train_svm(X_train, y_train, actual_candidates, X_test, y_test):
 	svm_clf = SVC(gamma='scale')
 	svm_clf.fit(X_train, y_train)
 	predictions = svm_clf.predict(X_test)
+
+	# White list the predictions
+	for idx, candidate in zip(range(len(actual_candidates)), actual_candidates):
+		if candidate in white_list:
+			predictions[idx] = 1
+	
 	#find_false_positives(actual_candidates, y_test, predictions)
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # svm_clf.score(X_test, y_test)
 
