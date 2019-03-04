@@ -70,7 +70,7 @@ def train_svm(X_train, y_train, actual_candidates, X_test, y_test):
 	svm_clf = SVC(gamma='scale')
 	svm_clf.fit(X_train, y_train)
 	predictions = svm_clf.predict(X_test)
-	find_false_positives(actual_candidates, y_test, predictions)
+	#find_false_positives(actual_candidates, y_test, predictions)
 	return precision_recall_fscore_support(y_test, predictions, average='binary')  # svm_clf.score(X_test, y_test)
 
 
