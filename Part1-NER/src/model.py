@@ -66,7 +66,8 @@ def train_svm(X_train, y_train, actual_candidates, X_test, y_test):
 	:param y_test: list, class labels for training
 	:return: (float, float, float, int), precision, recall, fbeta_score, support
 	"""
-	svm_clf = SVC(gamma='auto')
+	class_wts = 'balanced'	# {0: 1, 1: 10000}
+	svm_clf = SVC(gamma='scale')
 	svm_clf.fit(X_train, y_train)
 	predictions = svm_clf.predict(X_test)
 	find_false_positives(actual_candidates, y_test, predictions)
