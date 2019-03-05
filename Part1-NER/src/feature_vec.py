@@ -20,6 +20,7 @@ def get_wordvec(path_to_vec):
 
     return word_vec
 
+
 word_vecs = get_wordvec('glove.6B.50d.txt')
 
 
@@ -48,11 +49,13 @@ def get_feature_vec(candidate):
     features[57] = is_prob_name(candidate)
     return features
 
+
 def is_prob_name(candidate):
     name_prob = ["Mr", "Mrs", "Ms", "Dr"]
     if candidate[0] in name_prob:
         return 1
     return 0
+
 
 def is_prefix_capital(candidate):
     if candidate[0] == '':
@@ -60,6 +63,7 @@ def is_prefix_capital(candidate):
     if candidate[0][0].isupper():
         return 1
     return 0
+
 
 def is_suffix_capital(candidate):
     if candidate[2] == '':
