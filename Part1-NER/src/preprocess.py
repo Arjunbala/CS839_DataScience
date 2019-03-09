@@ -160,9 +160,9 @@ def get_file_numbers():
 
 
 def main():
-    d, v = get_file_numbers()
-    print(len(d))
-    print(len(v))
+    #d, v = get_file_numbers()
+    #print(len(d))
+    #print(len(v))
     # dataset = label_dataset()
     # print(dataset[dataset['y'] == 1])
 
@@ -172,7 +172,24 @@ def main():
     #
     # print('Testing tokenize_candidates()')
     # print(tokenize_candidates(get_document_string('raw', 113)))
+    count = 0
+    for i in range(1,301):
+        l = fetch_annotated_tokens(i)
+        count = count + len(l)
+    print("Total: " + str(count))
 
+    count = 0
+    train_set, test_set = get_file_numbers()
+    for i in range(0, len(train_set)):
+        l = fetch_annotated_tokens(train_set[i])
+        count = count + len(l)
+    print("Train: " + str(count))
+
+    count = 0
+    for i in range(0, len(test_set)):
+        l = fetch_annotated_tokens(test_set[i])
+        count = count + len(l)
+    print("Test: " + str(count))
 
 if __name__ == "__main__":
     main()

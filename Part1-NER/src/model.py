@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import precision_recall_fscore_support
 
 
-white_list = ['New York', 'Los Angeles']
+white_list = ['New York', 'Los Angeles', 'San Francisco']
 
 
 def predict(classifier, X_vecs, X_strs):
@@ -23,14 +23,14 @@ def predict(classifier, X_vecs, X_strs):
 	:param X_vecs: ndarray, dataset for which predictions are to be made
 	:param X_strs: list, list of actual tokens corresponding to the feature vectors in X_vecs
 	:return: list, predictions
-	"""
+        """
+
 	predictions = classifier.predict(X_vecs)
 
 	# White list the predictions
 	for idx, x_str in zip(range(len(X_strs)), X_strs):
 		if x_str in white_list:
 			predictions[idx] = 1
-
 	return predictions
 
 
@@ -165,10 +165,10 @@ def cross_validation(dev_set, n_folds):
 		best_f1 = svm_f1
 		best_model = 'SVM'
 	
-	print('Decision Tree:', dt_prec, dt_rec)
-	print('Random Forest:', rf_prec, rf_rec)
-	print('Logistic Regression:', lr_prec, lr_rec)
-	print('SVM:', svm_prec, svm_rec)
+	print('Decision Tree:', dt_prec, dt_rec, dt_f1)
+	print('Random Forest:', rf_prec, rf_rec, rf_f1)
+	print('Logistic Regression:', lr_prec, lr_rec, lr_f1)
+	print('SVM:', svm_prec, svm_rec, svm_f1)
 	print()
 	print('Best model:', best_model)
 	print('F1 score:', best_f1)
