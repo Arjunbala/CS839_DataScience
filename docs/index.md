@@ -18,7 +18,7 @@ The raw dataset and the annotated dataset can be found below along with the dev 
 	- [Set J - Test Set](Part1-NER/test_set_annotated)
 
 ### Source Code
-- [README](Part1-NER/src/README.md)
+- [README](Part1-NER/src/README)
 - [Link](Part1-NER/src)
 
 ### Results
