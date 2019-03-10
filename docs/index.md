@@ -18,17 +18,17 @@ The raw dataset and the annotated dataset can be found below along with the dev 
 	- [Set J - Test Set](Part1-NER/test_set_annotated)
 
 ### Source Code
-- [README]()
-- [Link]()
+- [README](Part1-NER/src/README.md)
+- [Link](Part1-NER/src)
 
 ### Results
 On the test set, our model achieved the following results:
 
 | Precision | Recall | F1 Score |
 | :---: | :---: | :---: |
-| 0.90156 | 0.90156 | 0.90156 |
+| 0.9140 | 0.8878 | 0.9007 |
 
 
 ### Other documents
-- [zip file]()
-- [Report]()
+- [zip file](Part1-NER/ProjectStage1_LumenScience.zip)
+- [Report](Part1-NER/DataScience_Stage1_Report.pdf)
