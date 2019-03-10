@@ -31,4 +31,4 @@ On the test set, our model achieved the following results:
 
 ### Other documents
 - [zip file](Part1-NER/ProjectStage1_LumenScience.zip)
-- [Report](Part1-NER/DataScience_Stage1_Report.pdf)
+- [Report](Part1-NER/report.html)
