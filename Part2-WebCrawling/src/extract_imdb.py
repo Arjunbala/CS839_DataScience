@@ -14,7 +14,7 @@ def extract_movie_years(soup):
     year_list = []
     movies = soup.find_all('span', {'class': 'lister-item-year'})
     for x in movies:
-        year_list.append(x.text.split('(')[1].split(')')[0])
+        year_list.append(x.text.split('(')[-1].split(')')[0])
     return year_list
 
 def extract_runtime(soup):
@@ -33,9 +33,14 @@ def extract_user_rating(soup):
 
 def extract_metascores(soup):
     metascore_list = []
-    movies = soup.find_all('span',{'class':'metascore'})
+    movies = soup.find_all('div',{'class':'lister-item mode-detail'})
     for movie in movies:
-        metascore_list.append(movie.text.strip())
+        #print(movie)
+        metascore = movie.find('span', {'class':'metascore'})
+        if metascore is not None:
+            metascore_list.append(metascore.text.strip())
+        else:
+            metascore_list.append('')
     return metascore_list
 
 def extract_directors(soup):
@@ -56,7 +61,7 @@ def extract_actors(soup):
             all_names = ""
             for i in range(1, len(names)):
                 all_names = all_names + names[i].text + ", "
-            actors_list.append(all_names[0:len(all_names)-1])
+            actors_list.append(all_names[0:len(all_names)-2])
     return actors_list
 
 def extract_genres(soup):
@@ -70,8 +75,8 @@ def extract_genres(soup):
 base_url = 'https://www.imdb.com/list/ls063676189/?sort=list_order,asc&st_dt=&mode=detail&page='
 movie_dict_list = []
 id_no = 1
-csv_columns = ['ID', 'Name', 'Year', 'Runtime', 'User Rating', 'Director', 'Actors', 'Genre']
-for page_no in range(1,31):
+csv_columns = ['ID', 'Name', 'Year', 'Runtime', 'User Rating', 'Metascore', 'Director', 'Actors', 'Genre']
+for page_no in range(1,51):
     page_url = 'https://www.imdb.com/list/ls063676189/?sort=list_order,asc&st_dt=&mode=detail&page=' + str(page_no)
     print("Extracting from " + page_url)
     resp = requests.get(page_url)
@@ -80,7 +85,7 @@ for page_no in range(1,31):
     years = extract_movie_years(soup)
     runtimes = extract_runtime(soup)
     user_ratings = extract_user_rating(soup)
-    #metascores = extract_metascores(soup)
+    metascores = extract_metascores(soup)
     directors = extract_directors(soup)
     actors = extract_actors(soup)
     genres = extract_genres(soup)
@@ -93,13 +98,12 @@ for page_no in range(1,31):
         movie_dict['Year'] = years[i]
         movie_dict['Runtime'] = runtimes[i]
         movie_dict['User Rating'] = user_ratings[i]
-        #movie_dict['Metascore'] = metascores[i]
+        movie_dict['Metascore'] = metascores[i]
         movie_dict['Director'] = directors[i]
         movie_dict['Actors'] = actors[i]
         movie_dict['Genre'] = genres[i]
         movie_dict_list.append(movie_dict)
 
-print(movie_dict_list)
 try:
     with open('../data/imdb.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
