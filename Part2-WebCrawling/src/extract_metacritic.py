@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # TODO: Update URL
-url = 'https://www.metacritic.com/browse/movies/score/metascore/all/filtered'
+url = 'https://www.metacritic.com/browse/movies/score/metascore/all/filtered?page=0'
 session = requests.Session()
 
 resp = session.get(url, headers={'User-Agent': 'Mozilla/5.0'})
