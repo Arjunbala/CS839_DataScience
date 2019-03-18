@@ -22,6 +22,8 @@ nav_order: 1
 Completed
 {: .label .label-green }
 
+<p></p>
+
 ### Stage 2: [Crawling and Extracting Structured Data from Web Pages](stage2.md)
 {: .d-inline }
 Ongoing
