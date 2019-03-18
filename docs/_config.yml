@@ -1,7 +1,5 @@
 remote_theme: pmarsceill/just-the-docs
 
-exclude: ["Part1-NER/", "report.html"]
-
 title: Data Science
 search_enabled: true
 
