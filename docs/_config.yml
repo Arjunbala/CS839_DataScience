@@ -1,1 +1,4 @@
-theme: pmarsceill/just-the-docs
+remote_theme: pmarsceill/just-the-docs
+
+title: CS839 - Data Science (Spring 2019)
+search_enabled: true
