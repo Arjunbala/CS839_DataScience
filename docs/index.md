@@ -27,7 +27,7 @@ Completed
 ### Stage 2: [Crawling and Extracting Structured Data from Web Pages](stage2.md)
 {: .d-inline }
 Ongoing
-{: .label .label-orange}
+{: .label .label-yellow }
 
 ### Stage 3: Entity matching
 {: .text-grey-lt-300 }
