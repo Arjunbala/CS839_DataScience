@@ -81,47 +81,47 @@ def extract_genres(soup):
 
 
 def main():
-	base_url = 'https://www.imdb.com/list/ls063676189/?sort=list_order,asc&st_dt=&mode=detail&page='
-	movie_dict_list = []
-	id_no = 1
-	csv_columns = ['ID', 'Name', 'Year', 'Runtime', 'User Rating', 'Metascore', 'Director', 'Actors', 'Genre']
-	for page_no in range(1, 51):
-		page_url = 'https://www.imdb.com/list/ls063676189/?sort=list_order,asc&st_dt=&mode=detail&page=' + str(page_no)
-		print('Extracting from ' + page_url)
-		resp = requests.get(page_url)
-		soup = BeautifulSoup(resp.text, 'html.parser')
-		names = extract_movie_names(soup)
-		years = extract_movie_years(soup)
-		runtimes = extract_runtime(soup)
-		user_ratings = extract_user_rating(soup)
-		metascores = extract_metascores(soup)
-		directors = extract_directors(soup)
-		actors = extract_actors(soup)
-		genres = extract_genres(soup)
+    base_url = 'https://www.imdb.com/list/ls063676189/?sort=list_order,asc&st_dt=&mode=detail&page='
+    movie_dict_list = []
+    id_no = 1
+    csv_columns = ['ID', 'Name', 'Year', 'Runtime', 'User Rating', 'Metascore', 'Director', 'Actors', 'Genre']
+    for page_no in range(1, 51):
+        page_url = 'https://www.imdb.com/list/ls063676189/?sort=list_order,asc&st_dt=&mode=detail&page=' + str(page_no)
+        print('Extracting from ' + page_url)
+        resp = requests.get(page_url)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        names = extract_movie_names(soup)
+        years = extract_movie_years(soup)
+        runtimes = extract_runtime(soup)
+        user_ratings = extract_user_rating(soup)
+        metascores = extract_metascores(soup)
+        directors = extract_directors(soup)
+        actors = extract_actors(soup)
+        genres = extract_genres(soup)
 
-		for i in range(0, len(names)):
-			movie_dict = {}
-			movie_dict['ID'] = ('%04d' % id_no)
-			id_no = id_no + 1
-			movie_dict['Name'] = names[i]
-			movie_dict['Year'] = years[i]
-			movie_dict['Runtime'] = runtimes[i]
-			movie_dict['User Rating'] = user_ratings[i]
-			movie_dict['Metascore'] = metascores[i]
-			movie_dict['Director'] = directors[i]
-			movie_dict['Actors'] = actors[i]
-			movie_dict['Genre'] = genres[i]
-			movie_dict_list.append(movie_dict)
+        for i in range(0, len(names)):
+            movie_dict = {}
+            movie_dict['ID'] = ('%04d' % id_no)
+            id_no = id_no + 1
+            movie_dict['Name'] = names[i]
+            movie_dict['Year'] = years[i]
+            movie_dict['Runtime'] = runtimes[i]
+            movie_dict['User Rating'] = user_ratings[i]
+            movie_dict['Metascore'] = metascores[i]
+            movie_dict['Director'] = directors[i]
+            movie_dict['Actors'] = actors[i]
+            movie_dict['Genre'] = genres[i]
+            movie_dict_list.append(movie_dict)
 
-	try:
-		with open('../data/imdb.csv', 'w') as csvfile:
-			writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
-			writer.writeheader()
-			for data in movie_dict_list:
-				writer.writerow(data)
-	except IOError:
-		print('I/O error')
+    try:
+        with open('../data/imdb.csv', 'w') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+            writer.writeheader()
+            for data in movie_dict_list:
+                writer.writerow(data)
+    except IOError:
+        print('I/O error')
 
 
 if __name__ == "__main__":
-	main()
+    main()
