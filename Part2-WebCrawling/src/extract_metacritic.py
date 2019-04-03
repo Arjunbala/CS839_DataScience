@@ -15,7 +15,8 @@ def main():
 	meta_scores = []
 	directors = [] 
 	actors = []
-	genres = []
+	genres_list = []
+	runtimes = []
 	for movie in movie_links :
 		link = 'https://www.metacritic.com' + movie['href']
 		resp_t = requests.get(link, headers={'User-Agent': 'Mozilla/5.0'})
@@ -45,6 +46,11 @@ def main():
 		for gen in genres_list :
 			genres.append(gen.string)
 		print(genres)
+		genres_list.append(genres)
+
+		rt = soup_t.find('div', { 'class' : "runtime"}).find_all('span')[1].string
+		runtimes.append(rt)
+		print(rt)
 
 		break
 
