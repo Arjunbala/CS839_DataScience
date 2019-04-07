@@ -34,7 +34,6 @@ def main():
 				movie_name = soup_t.find('h1').string
 				# print(movie_name)
 			except :
-				print('YOLO')
 				movie_name = ''
 				# continue
 
@@ -42,7 +41,6 @@ def main():
 				user_rating = soup_t.find('span', {'class' :"metascore_w user med_small movie positive"}).string
 				# print(user_rating)
 			except :
-				print('YOLO')
 				user_rating = ''
 				# continue
 			
@@ -50,7 +48,6 @@ def main():
 				meta_rating = soup_t.find('div', {'class' : "metascore_w header_size movie positive indiv perfect" } ).string
 				# print(meta_rating)
 			except :
-				print('YOLO')
 				meta_rating = ''
 				# continue
 			
@@ -59,7 +56,6 @@ def main():
 				# print(soup_t.find('div', {'class' : 'details_section'}).find_all('span'))
 				# print(release_year)
 			except :
-				print('YOLO')
 				release_year = ''
 				# continue
 			
@@ -67,7 +63,6 @@ def main():
 				director = soup_t.find('div',{'class':"director"}).find('a').find('span').string
 				# print(director)
 			except :
-				print('YOLO')
 				director = ''
 				# continue
 
@@ -79,7 +74,6 @@ def main():
 				# print(stars)
 				stars = stars[:-2]
 			except :
-				print('YOLO')
 				stars = ''
 				# continue
 
@@ -92,7 +86,6 @@ def main():
 				genres = genres[:-2]
 				# print(genres)
 			except :
-				print('YOLO')
 				genres = ''
 				# continue
 			
@@ -100,7 +93,6 @@ def main():
 				rt = soup_t.find('div', { 'class' : "runtime"}).find_all('span')[1].string
 				# print(rt)
 			except :
-				print('YOLO')
 				rt = ''
 				# continue
 
