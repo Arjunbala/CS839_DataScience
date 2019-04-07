@@ -13,9 +13,9 @@ def main():
 	genres_list = []
 	runtimes = []
 	ids = []
-	id_init = 400
+	id_init = 2800
 	#Code to extract information about 3000 movies from metacritic
-	for i in range(4,10) :
+	for i in range(28,32) :
 		if i == 0:
 			base_url = 'https://www.metacritic.com/browse/movies/score/metascore/all/filtered' 
 		else :
