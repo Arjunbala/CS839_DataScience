@@ -8,5 +8,5 @@ nav_order: 3
 {: .fs-5 .fw-300 }
 
 ### Coming Soon
-[IMDB Data](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/Part2-WebCrawling/data/imdb.csv) \
-[Metacritic Data](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/Part2-WebCrawling/data/metacritic.csv)
+- [IMDB Data](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/Part2-WebCrawling/data/imdb.csv)
+- [Metacritic Data](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/Part2-WebCrawling/data/metacritic.csv)
