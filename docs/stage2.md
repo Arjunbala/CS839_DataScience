@@ -9,4 +9,4 @@ nav_order: 3
 
 - [Data Directory containing CSV files](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/Part2-WebCrawling/data/)
 - [Directory Containing Code](https://github.com/Rohit--Sharma/CS839_DataScience/tree/master/Part2-WebCrawling/src)
-- [Report]( [Report](Part2-WebCrawling/report.html))
+- [Report](Part2-WebCrawling/report.html)
