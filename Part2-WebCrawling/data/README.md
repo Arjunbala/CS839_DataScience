@@ -1,9 +1,10 @@
 # Movies Data
-We decided to extract movie information from two popular movie rating websites, [IMDB])(https://www.imdb.com/) and [Metacritic](https://www.metacritic.com/). We extracted 3000 tuples from both these websites and stored in two csv files in tabular format:
+We decided to extract movie information from two popular movie rating websites, [IMDB](https://www.imdb.com/) and [Metacritic](https://www.metacritic.com/). We extracted 3000 tuples from both these websites and stored in two csv files in tabular format:
 1. [IMDB](imdb.csv)
 2. [Metacritic](metacritic.csv)
 
 We extracted the following attributes about movies from the above websites:
+
 | Attribute | Description |
 | :---: | :---: |
 | ID | Primary Key |
