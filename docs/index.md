@@ -30,6 +30,7 @@ New
 {: .label .label-purple }
 
 ### Stage 3: Entity matching
+{: .d-inline }
 Coming Soon
 {: .label .label-yellow }
 
