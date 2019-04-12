@@ -29,6 +29,8 @@ Completed
 New
 {: .label .label-purple }
 
+<p></p>
+
 ### Stage 3: Entity matching
 {: .d-inline }
 Coming Soon
