@@ -26,15 +26,12 @@ Completed
 
 ### Stage 2: [Crawling and Extracting Structured Data from Web Pages](stage2.md)
 {: .d-inline }
-New
-{: .label .label-purple }
+Completed
+{: .label .label-green }
 
 <p></p>
 
-### Stage 3: Entity matching
+### Stage 3: [Entity Matching using CloudMatcher](stage3.md)
 {: .d-inline }
-Coming Soon
-{: .label .label-yellow }
-
-### Stage 4: TBD
-{: .text-grey-lt-300 }
+New
+{: .label .label-purple }
