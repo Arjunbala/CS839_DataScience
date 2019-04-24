@@ -8,8 +8,8 @@ nav_order: 2
 {: .fs-5 .fw-300 }
 
 ### Matching Fodors and Zagats
-- CloudMatcher User ID: arungta
-- Project ID: 
+- CloudMatcher User ID: **arungta**
+- Project ID: **group-3_stage-3**
 - Statistics of Matches:
 
 ![LastPage](Part3-EntityMatching/last-page.png?raw=true "LastPage")
@@ -17,4 +17,6 @@ nav_order: 2
 <p></p>
 
 ### Matching Movies from IMDB and Metacritic
-{: .d-inline } Coming Soon {: .label .label-yellow }
+{: .d-inline }
+Completed
+{: .label .label-yellow }
