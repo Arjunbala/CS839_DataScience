@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Project Stage 3
-nav_order: 2
+nav_order: 3
 ---
 
 ## Project Stage III - Entity Matching using CloudMatcher
@@ -18,5 +18,5 @@ nav_order: 2
 
 ### Matching Movies from IMDB and Metacritic
 {: .d-inline }
-Completed
+Coming Soon
 {: .label .label-yellow }
