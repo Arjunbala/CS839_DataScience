@@ -16,7 +16,10 @@ nav_order: 3
 
 <p></p>
 
-### Movies from IMDB and Metacritic - Blocking Step
+## Movies from IMDB and Metacritic
+
+### Blocking Step
+
 - CloudMatcher User ID: **arungta**
 - Project ID : **group_3_movies_matching**
 
@@ -27,7 +30,7 @@ nav_order: 3
 <p></p>
 
 
-### Movies from IMDB and Metacritic - Matching Step
+### Matching Step
 - CloudMatcher User ID: **arungta**
 - Project ID : **group_3_movies_matching**
 
