@@ -16,7 +16,23 @@ nav_order: 3
 
 <p></p>
 
-### Matching Movies from IMDB and Metacritic
-{: .d-inline }
-Coming Soon
-{: .label .label-yellow }
+### Movies from IMDB and Metacritic - Blocking Step
+- CloudMatcher User ID: **arungta**
+- Project ID : **group_3_movies_matching**
+
+- Screenshot:
+
+![movies_blocking](Part3-EntityMatching/movies_blocking.png?raw=true "movies_blocking")
+
+<p></p>
+
+
+### Movies from IMDB and Metacritic - Matching Step
+- CloudMatcher User ID: **arungta**
+- Project ID : **group_3_movies_matching**
+
+- Statistics of Matches:
+
+![movies_matching](Part3-EntityMatching/movies_matching.png?raw=true "movies_matching")
+
+<p></p>
