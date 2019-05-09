@@ -1,0 +1,401 @@
+A_id,A_name,A_year,B_id,B_name,B_year,Label
+52,The Truman Show,1998,194,The Truman Show,1998,TRUE
+1821,Out of Sight,1998,551,Out of Sight,1998,TRUE
+2830,Head-On,2004,1379,Head-On,2005,TRUE
+2025,The Fisher King,1991,2889,The Falling,2015,FALSE
+2057,The Last Song,2010,926,The Levelling,2017,FALSE
+1951,Dead Silence,2007,238,Dead Souls,2018,FALSE
+2043,The Guest,2014,750,The Flat,2012,FALSE
+2881,The Last Temptation of Christ,1988,1064,The Last Temptation of Christ,1988,TRUE
+2609,13 Hours,2016,549,Summer Hours,2009,FALSE
+1443,"Planes, Trains & Automobiles",1987,2757,"Planes, Trains & Automobiles",1987,TRUE
+2531,The Devil's Backbone,2001,1441,The Devil's Backbone,2001,TRUE
+207,Harry Potter and the Prisoner of Azkaban,2004,829,Harry Potter and the Prisoner of Azkaban,2004,TRUE
+2196,The Haunting,1999,1591,The Hunting Ground,2015,FALSE
+2077,The Duchess,2008,2343,The Duchess of Langeais,2008,FALSE
+2295,Harsh Times,2005,1081,Three Times,2006,FALSE
+191,Star Trek Into Darkness,2013,2764,Star Trek Into Darkness,2013,TRUE
+2152,Sex and the City 2,2010,1007,Of Time and the City,2009,FALSE
+2973,"Sex, Lies, and Videotape",1989,381,"sex, lies, and videotape",1989,TRUE
+1403,Little Children,2006,2070,Little Children,2006,TRUE
+1449,Empire of the Sun,1987,967,Under the Sun,2016,FALSE
+2325,The Man Who Shot Liberty Valance,1962,57,The Man Who Shot Liberty Valance,1962,TRUE
+2062,The Killing,1956,926,The Levelling,2017,FALSE
+2994,The Reaping,2007,926,The Levelling,2017,FALSE
+408,The Rock,1996,2310,The Attack,2013,FALSE
+1203,Carrie,2013,560,Carrie,1976,FALSE
+2060,The Birdcage,1996,2729,The Birdcage,1996,TRUE
+940,The Thin Red Line,1998,1426,The Thin Red Line,1999,TRUE
+24,Schindler's List,1993,88,Schindler's List,1993,TRUE
+2393,The King of Comedy,1982,2443,The King of Comedy,1983,TRUE
+2671,The Soloist,2009,851,The Agronomist,2004,FALSE
+1795,The Raven,2012,537,The Sun,2009,FALSE
+1411,The Host,2013,233,The Artist,2011,FALSE
+2201,The Siege,1998,450,The Son,2003,FALSE
+520,Zero Dark Thirty,2012,52,Zero Dark Thirty,2012,TRUE
+1625,Legion,2010,489,Lebanon,2010,FALSE
+1846,The New World,2005,2314,The New Girlfriend,2015,FALSE
+1641,High Noon,1952,241,High Noon,1952,TRUE
+1027,The Iron Giant,1999,553,The Iron Giant,1999,TRUE
+728,Chicago,2002,861,Chicago,2002,TRUE
+1306,Roman Holiday,1953,1762,Roman Holiday,1953,TRUE
+7,The Matrix,1999,2603,The Matrix,1999,TRUE
+1327,The Book Thief,2013,1483,Thief,1981,FALSE
+1630,A Dangerous Method,2011,1869,A Dangerous Method,2011,TRUE
+1899,The Doors,1991,1803,The Dog,2014,FALSE
+503,The Mist,2007,2125,The Specialist,2000,FALSE
+8,The Lord of the Rings: The Return of the King,2003,71,The Lord of the Rings: The Return of the King,2003,TRUE
+841,The Croods,2013,1912,The Bad Kids,2016,FALSE
+253,Casino,1995,2500,Casino,1995,TRUE
+1486,The Family,2013,2889,The Falling,2015,FALSE
+2446,My Left Foot,1989,17,My Left Foot,1990,TRUE
+50,One Flew Over the Cuckoo's Nest,1975,1070,One Flew Over the Cuckoo's Nest,1975,TRUE
+1410,Margin Call,2011,1817,Margin Call,2011,TRUE
+418,National Treasure,2004,220,National Gallery,2014,FALSE
+435,The Interview,2014,455,The Interrupters,2011,FALSE
+133,The Martian,2015,2530,The Clan,2016,FALSE
+1728,The Rite,2011,1820,The Ritchie Boys,2006,FALSE
+2143,The Ruins,2008,2166,The Woodmans,2011,FALSE
+223,American Hustle,2013,195,American Hustle,2013,TRUE
+1476,The Jackal,1997,1181,The Day of the Jackal,1973,FALSE
+732,Gandhi,1982,1287,Gandhi,1983,TRUE
+921,Blue Valentine,2010,930,Blue Valentine,2010,TRUE
+175,Jaws,1975,374,Jaws,1975,TRUE
+1316,This Is England,2006,446,This Is England,2007,TRUE
+1020,The Intern,2015,534,The Intruder,2005,FALSE
+704,Kiss Kiss Bang Bang,2005,2739,Kiss Kiss Bang Bang,2005,TRUE
+505,North by Northwest,1959,14,North by Northwest,1959,TRUE
+557,Almost Famous,2000,2619,Almost Holy,2016,FALSE
+1468,The Fall,2006,1632,The Pool,2008,FALSE
+1652,Ghost in the Shell,1995,1871,Ghost in the Shell,1996,TRUE
+2753,Fright Night,1985,2261,My Big Night,2016,FALSE
+68,Snatch,2000,1659,Scratch,2002,FALSE
+2187,Fallen,1998,2964,Fallen Angels,1998,FALSE
+2257,Dreamgirls,2006,1766,Dreamgirls,2006,TRUE
+2139,Space Cowboys,2000,2536,Space Cowboys,2000,TRUE
+279,Dawn of the Planet of the Apes,2014,1309,Dawn of the Planet of the Apes,2014,TRUE
+268,American Sniper,2014,2858,Amer,2010,FALSE
+2637,Dark Water,2005,1676,Water,2006,FALSE
+743,The Hunt,2012,750,The Flat,2012,FALSE
+1521,The Manchurian Candidate,2004,1897,The Manchurian Candidate,2004,TRUE
+144,Fargo,1996,434,Argo,2012,FALSE
+2030,Jane Eyre,2011,326,Jane,2017,FALSE
+1777,The Man with the Golden Gun,1974,2344,The Golden Dream,2015,FALSE
+46,The Hunger Games,2012,1884,The Hunger Games: Catching Fire,2013,FALSE
+889,Shame,2011,2825,Shame,2011,TRUE
+57,Sin City,2005,2350,Sin City,2005,TRUE
+2795,The Experiment,2010,915,Experimenter,2015,FALSE
+303,The Terminal,2004,2742,The Tunnel,2005,FALSE
+542,A Bug's Life,1998,1605,A Bug's Life,1998,TRUE
+2491,The Net,1995,233,The Artist,2011,FALSE
+1042,The Karate Kid,1984,901,The Maid,2009,FALSE
+928,Rosemary's Baby,1968,29,Rosemary's Baby,1968,TRUE
+2151,The Words,2012,1636,The War Tapes,2006,FALSE
+1396,Tears of the Sun,2003,967,Under the Sun,2016,FALSE
+98,Skyfall,2012,1005,Skyfall,2012,TRUE
+2907,The Rebound,2009,1800,Housebound,2014,FALSE
+2317,Solaris,1971,2150,Solas,2000,FALSE
+1402,The Lost Boys,1987,1820,The Ritchie Boys,2006,FALSE
+2779,The Player,1992,2959,The Tracker,2004,FALSE
+978,Mud,2012,1880,Mud,2013,TRUE
+51,Guardians of the Galaxy,2014,1725,Guardians of the Galaxy,2014,TRUE
+1705,Midnight Cowboy,1969,1258,Midnight Cowboy,1969,TRUE
+418,National Treasure,2004,2138,National Bird,2016,FALSE
+702,The Beach,2000,2720,Woman on the Beach,2008,FALSE
+1386,Red Eye,2005,2967,Red Eye,2005,TRUE
+2231,Bowfinger,1999,2955,Bowfinger,1999,TRUE
+1338,Spartacus,1960,329,Spartacus,1960,TRUE
+127,Ratatouille,2007,33,Ratatouille,2007,TRUE
+926,Chicken Run,2000,282,Chicken Run,2000,TRUE
+1873,Funny Games,2007,1390,Funny Ha Ha,2005,FALSE
+1111,The Mechanic,2011,1904,The Mend,2015,FALSE
+1638,The International,2009,455,The Interrupters,2011,FALSE
+1304,On the Waterfront,1954,132,On the Waterfront,1954,TRUE
+2847,The Matador,2005,246,The Arbor,2011,FALSE
+2205,Speed Racer,2008,1409,Speed,1994,FALSE
+2670,The Eye,2008,625,The Square,2013,FALSE
+2573,The Fog,1980,750,The Flat,2012,FALSE
+1429,The Prince of Egypt,1998,1485,The Princess of Montpensier,2011,FALSE
+2800,The Last Exorcism,2010,1478,The Last Mistress,2008,FALSE
+867,The Raid: Redemption,2011,2479,The Raid: Redemption,2012,TRUE
+165,The Matrix Reloaded,2003,2603,The Matrix,1999,FALSE
+2576,Bullitt,1968,715,Bullitt,1968,TRUE
+1202,A Fish Called Wanda,1988,1095,A Fish Called Wanda,1988,TRUE
+2234,Mysterious Skin,2004,2398,Mysterious Skin,2005,TRUE
+2609,13 Hours,2016,631,Museum Hours,2013,FALSE
+411,The Simpsons Movie,2007,1151,The Simpsons Movie,2007,TRUE
+1476,The Jackal,1997,2543,The Scandal,2004,FALSE
+58,The Lion King,1994,2889,The Falling,2015,FALSE
+1789,Beginners,2010,1683,Italian for Beginners,2002,FALSE
+2564,Like Crazy,2011,2204,Like Crazy,2017,FALSE
+399,Cars,2006,2550,Cars,2006,TRUE
+1258,The Watch,2012,1636,The War Tapes,2006,FALSE
+957,The Great Dictator,1940,2766,The Great Invisible,2014,FALSE
+404,Aladdin,1992,444,Aladdin,1992,TRUE
+1224,Foxcatcher,2014,388,Dreamcatcher,2015,FALSE
+1643,The Cell,2000,666,The Fool,2015,FALSE
+2154,All Is Lost,2013,336,All Is Lost,2013,TRUE
+261,Harry Potter and the Deathly Hallows: Part 1,2010,1015,Harry Potter and the Goblet of Fire,2005,FALSE
+969,Planet of the Apes,1968,2563,Planet of Snail,2012,FALSE
+1423,Y Tu Mam Tambin,2001,253,Y Tu Mam Tambin,2002,TRUE
+1789,Beginners,2010,954,Beginners,2011,TRUE
+410,The Lives of Others,2006,204,The Lives of Others,2006,TRUE
+104,Transformers,2007,2487,Transpecos,2016,FALSE
+1781,The Lobster,2015,807,The Lobster,2016,TRUE
+2520,The Signal,2014,537,The Sun,2009,FALSE
+568,The Grey,2011,2139,The Great Flood,2014,FALSE
+1969,Gosford Park,2001,187,Gosford Park,2001,TRUE
+2672,The Mission,1986,2532,The Corporation,2004,FALSE
+2887,After Hours,1985,148,After Hours,1985,TRUE
+407,Brokeback Mountain,2005,348,Brokeback Mountain,2005,TRUE
+1253,The Other Woman,2014,959,The Headless Woman,2009,FALSE
+350,127 Hours,2010,549,Summer Hours,2009,FALSE
+718,Natural Born Killers,1994,2159,Natural Born Killers,1994,TRUE
+1929,The Kid,1921,1912,The Bad Kids,2016,FALSE
+629,Eastern Promises,2007,907,Eastern Promises,2007,TRUE
+358,The Fighter,2010,2802,The Final Master,2016,FALSE
+988,Misery,1990,1991,Misery,1990,TRUE
+1508,Escape from Alcatraz,1979,1740,Escape from Alcatraz,1979,TRUE
+407,Brokeback Mountain,2005,869,Mountain,2018,FALSE
+2272,The Iceman,2012,537,The Sun,2009,FALSE
+794,The Internship,2013,534,The Intruder,2005,FALSE
+2334,The General,1926,2543,The Scandal,2004,FALSE
+1546,The Queen,2006,1386,Thirteen,2000,FALSE
+2998,Invasion of the Body Snatchers,1978,1935,Invasion of the Body Snatchers,1978,TRUE
+1670,A Streetcar Named Desire,1951,34,A Streetcar Named Desire,1951,TRUE
+10,The Dark Knight Rises,2012,1438,The Dark Knight Rises,2012,TRUE
+1923,Blood Simple,1984,1003,Blood Simple,1985,TRUE
+1945,The Pacifier,2005,1973,The Boxer,1997,FALSE
+856,A Nightmare on Elm Street,1984,1697,A Nightmare on Elm Street,1984,TRUE
+1839,Monster House,2006,2169,Monster,2003,FALSE
+2062,The Killing,1956,2889,The Falling,2015,FALSE
+61,Toy Story,1995,43,Toy Story,1995,TRUE
+1910,Beautiful Creatures,2013,1254,Beautiful People,2000,FALSE
+196,Oblivion,2013,940,Living in Oblivion,1995,FALSE
+1932,Witness,1985,1326,The Witness,2016,FALSE
+317,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,2006,215,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,2006,TRUE
+38,The Usual Suspects,1995,1606,The Usual Suspects,1995,TRUE
+2695,The Rocketeer,1991,1604,The Cockettes,2002,FALSE
+1507,The Way Back,2010,2310,The Attack,2013,FALSE
+1414,House of Flying Daggers,2004,207,House of Flying Daggers,2004,TRUE
+2095,The Uninvited,2009,920,The Damned United,2009,FALSE
+1631,Faster,2010,984,Sister,2012,FALSE
+606,Gone Baby Gone,2007,2635,Gone Baby Gone,2007,TRUE
+1,The Dark Knight,2008,1438,The Dark Knight Rises,2012,FALSE
+1706,The Walk,2015,1044,The World,2005,FALSE
+2159,Blindness,2008,752,Blind,2015,FALSE
+1435,Escape from New York,1981,1770,Escape from New York,1981,TRUE
+613,Spotlight,2015,2857,Daylight,2011,FALSE
+287,Gangs of New York,2002,2807,Gangs of New York,2002,TRUE
+539,Shrek the Third,2007,2037,Shrek 2,2004,FALSE
+219,The Great Gatsby,2013,431,The Great Beauty,2013,FALSE
+160,Looper,2012,611,Looper,2012,TRUE
+118,How to Train Your Dragon,2010,2334,How to Train Your Dragon,2010,TRUE
+424,The Wrestler,2008,1728,The Hunter,2012,FALSE
+2381,Breach,2007,2377,Breach,2007,TRUE
+2136,The Sitter,2011,1728,The Hunter,2012,FALSE
+2675,Funny Games,1997,1390,Funny Ha Ha,2005,FALSE
+220,Children of Men,2006,1774,Father of My Children,2010,FALSE
+738,Traffic,2000,439,Traffic,2000,TRUE
+1696,The Core,2003,2755,The Lure,2017,FALSE
+2769,The Sentinel,2006,2742,The Tunnel,2005,FALSE
+1023,The Birds,1963,778,These Birds Walk,2013,FALSE
+705,Shakespeare in Love,1998,306,Shakespeare in Love,1998,TRUE
+2538,The Great Debaters,2007,2139,The Great Flood,2014,FALSE
+2024,Rebel Without a Cause,1955,988,Grin Without a Cat,2002,FALSE
+417,Shooter,2007,2360,Shower,2000,FALSE
+2420,The Lookout,2007,2836,The Lottery,2010,FALSE
+2671,The Soloist,2009,1802,The Student,2017,FALSE
+2695,The Rocketeer,1991,1973,The Boxer,1997,FALSE
+2779,The Player,1992,1728,The Hunter,2012,FALSE
+2565,Jack,1996,2694,King Jack,2016,FALSE
+268,American Sniper,2014,1320,American Honey,2016,FALSE
+1441,Pinocchio,1940,11,Pinocchio,1940,TRUE
+1093,Dazed and Confused,1993,1510,Dazed and Confused,1993,TRUE
+860,Tinker Tailor Soldier Spy,2011,513,Tinker Tailor Soldier Spy,2011,TRUE
+1507,The Way Back,2010,2068,The Wolfpack,2015,FALSE
+1991,King Kong,1933,171,King Kong,1933,TRUE
+1012,Once Upon a Time in Mexico,2003,600,Lagaan: Once Upon a Time in India,2002,FALSE
+278,The Mummy,1999,1904,The Mend,2015,FALSE
+132,Trainspotting,1996,678,Trainspotting,1996,TRUE
+1234,The Drop,2014,1803,The Dog,2014,FALSE
+953,Three Kings,1999,853,Three Kings,1999,TRUE
+623,The Artist,2011,851,The Agronomist,2004,FALSE
+1381,City of Angels,1998,2683,City of Gold,2016,FALSE
+2594,Out of Time,2003,2320,Ahead of Time,2010,FALSE
+2273,The Great Beauty,2013,2854,Dormant Beauty,2014,FALSE
+2670,The Eye,2008,2755,The Lure,2017,FALSE
+499,The Twilight Saga: New Moon,2009,888,The Twilight Samurai,2004,FALSE
+2773,Inland Empire,2006,2820,Inland Empire,2006,TRUE
+448,Serenity,2005,2213,Serenity,2005,TRUE
+1497,Peter Pan,1953,1769,Peter Pan,1953,TRUE
+1674,The Experiment,2001,1802,The Student,2017,FALSE
+1148,Gamer,2009,2858,Amer,2010,FALSE
+2053,Red Dawn,2012,2556,Red Satin,2002,FALSE
+2574,The Ice Storm,1997,2883,The Ice Storm,1997,TRUE
+906,Pi,1998,2723,Pi,1998,TRUE
+2384,The Saint,1997,750,The Flat,2012,FALSE
+2598,The Client,1994,2530,The Clan,2016,FALSE
+1196,The Apartment,1960,1802,The Student,2017,FALSE
+2513,The Replacements,2000,1397,The Innocents,2016,FALSE
+2334,The General,1926,2740,The Search for General Tso,2015,FALSE
+1908,The Last House on the Left,2009,1195,The Last of the Unjust,2013,FALSE
+2573,The Fog,1980,1388,In the Fog,2013,FALSE
+1356,The Bounty Hunter,2010,1728,The Hunter,2012,FALSE
+1301,Funny People,2009,1390,Funny Ha Ha,2005,FALSE
+765,The Great Escape,1963,2766,The Great Invisible,2014,FALSE
+542,A Bug's Life,1998,122,After Life,1999,FALSE
+2584,The Rainmaker,1997,2959,The Tracker,2004,FALSE
+629,Eastern Promises,2007,1078,Promises,2002,FALSE
+174,Thor: The Dark World,2013,1044,The World,2005,FALSE
+1745,The Final Destination,2009,2532,The Corporation,2004,FALSE
+2422,A Simple Plan,1998,905,A Simple Plan,1998,TRUE
+126,The Grand Budapest Hotel,2014,267,The Grand Budapest Hotel,2014,TRUE
+2320,The Spirit,2008,450,The Son,2003,FALSE
+1479,The Call,2013,666,The Fool,2015,FALSE
+2277,Happiness,1998,989,Happiness,1998,TRUE
+1048,"Girl, Interrupted",1999,455,The Interrupters,2011,FALSE
+255,The Hurt Locker,2008,63,The Hurt Locker,2009,TRUE
+778,American Wedding,2003,1320,American Honey,2016,FALSE
+2258,The Edge,1997,2755,The Lure,2017,FALSE
+699,Munich,2005,2251,Munich,2005,TRUE
+1673,A Prophet,2009,175,A Prophet,2010,TRUE
+702,The Beach,2000,424,The Beaches of Agns,2009,FALSE
+1143,Black Mass,2015,1863,Black Souls,2015,FALSE
+2308,Dead Man Down,2013,1895,Dead Man's Burden,2013,FALSE
+1362,Ghost World,2001,1044,The World,2005,FALSE
+1570,The Ladykillers,2004,1962,The Settlers,2017,FALSE
+2125,Carol,2015,42,Carol,2015,TRUE
+2242,The Postman,1997,2530,The Clan,2016,FALSE
+1846,The New World,2005,1044,The World,2005,FALSE
+267,American Gangster,2007,2858,Amer,2010,FALSE
+1124,War Horse,2011,2780,War Horse,2011,TRUE
+2937,Breakdown,1997,2571,Breakdown,1997,TRUE
+358,The Fighter,2010,1973,The Boxer,1997,FALSE
+28,American Beauty,1999,1320,American Honey,2016,FALSE
+707,The Sting,1973,1803,The Dog,2014,FALSE
+1920,The Bling Ring,2013,926,The Levelling,2017,FALSE
+2617,Gangs of Wasseypur,2012,213,Gangs of Wasseypur,2015,FALSE
+605,Pride & Prejudice,2005,1225,Pride,2014,FALSE
+503,The Mist,2007,1478,The Last Mistress,2008,FALSE
+613,Spotlight,2015,84,Spotlight,2015,TRUE
+2096,The Manchurian Candidate,1962,1897,The Manchurian Candidate,2004,FALSE
+1596,Attack the Block,2011,1979,Attack the Block,2011,TRUE
+1529,The Interpreter,2005,534,The Intruder,2005,FALSE
+1149,JFK,1991,2672,JFK,1991,TRUE
+1135,Wayne's World,1992,1044,The World,2005,FALSE
+2723,Sexy Beast,2000,1253,Sexy Beast,2001,TRUE
+2822,Working Girl,1988,2516,Working Girl,1988,TRUE
+980,Mama,2013,402,Manakamana,2014,FALSE
+2540,Porco Rosso,1992,748,Porco Rosso,1992,TRUE
+1725,Philomena,2013,1661,Philomena,2013,TRUE
+11,The Lord of the Rings: The Two Towers,2002,109,The Lord of the Rings: The Fellowship of the Ring,2001,FALSE
+2709,Race to Witch Mountain,2009,869,Mountain,2018,FALSE
+949,The Purge,2013,2342,The Pirogue,2013,FALSE
+414,Ocean's Thirteen,2007,1386,Thirteen,2000,FALSE
+2953,The Last Kiss,2006,1195,The Last of the Unjust,2013,FALSE
+2055,Fearless,2006,343,Fateless,2006,FALSE
+716,Amores Perros,2000,685,Amores Perros,2001,TRUE
+425,John Wick,2014,2052,John Wick: Chapter 2,2017,FALSE
+294,Beauty and the Beast,1991,1644,Starving the Beast,2016,FALSE
+9,The Godfather,1972,1,The Godfather,1972,TRUE
+1730,The Last Boy Scout,1991,1195,The Last of the Unjust,2013,FALSE
+356,The Cabin in the Woods,2011,2655,The Cabin in the Woods,2012,TRUE
+2671,The Soloist,2009,2125,The Specialist,2000,FALSE
+1167,The Seventh Seal,1957,2543,The Scandal,2004,FALSE
+242,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,32,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,TRUE
+526,The Dictator,2012,246,The Arbor,2011,FALSE
+1546,The Queen,2006,2530,The Clan,2016,FALSE
+2576,Bullitt,1968,2246,Bully ,2012,FALSE
+2930,The Fan,1996,2889,The Falling,2015,FALSE
+2719,The Proposition,2005,2532,The Corporation,2004,FALSE
+1419,The Strangers,2008,1104,The Strange Little Cat,2014,FALSE
+79,Gran Torino,2008,2684,Gran Torino,2008,TRUE
+2169,Kids,1995,2933,Spy Kids,2001,FALSE
+330,Ex Machina,2014,1451,Ex Machina,2015,TRUE
+1565,The Raid 2,2014,2928,The Raid 2,2014,TRUE
+1432,Push,2009,2803,Pusher,1999,FALSE
+2778,The East,2013,233,The Artist,2011,FALSE
+2929,The Piano Teacher,2001,1313,The Piano Teacher,2002,TRUE
+1063,Invictus,2009,2338,Invictus,2009,TRUE
+116,The Bourne Ultimatum,2007,472,The Bourne Ultimatum,2007,TRUE
+2859,London Boulevard,2010,2919,London Road,2016,FALSE
+2159,Blindness,2008,1980,Notes on Blindness,2016,FALSE
+1108,Straight Outta Compton,2015,2640,Straight Outta Compton,2015,TRUE
+2242,The Postman,1997,476,The Salesman,2017,FALSE
+189,Shaun of the Dead,2004,1832,Shaun of the Dead,2004,TRUE
+2512,I'm Not There,2007,2434,I'm Not There.,2007,TRUE
+847,Singin' in the Rain,1952,8,Singin' in the Rain,1952,TRUE
+1494,Matilda,1996,2646,Matilda,1996,TRUE
+1664,Land of the Dead,2005,2909,Land of the Dead,2005,TRUE
+746,Closer,2004,937,Closet Monster,2016,FALSE
+110,The King's Speech,2010,283,The King's Speech,2010,TRUE
+744,Meet Joe Black,1998,1687,Code Black,2014,FALSE
+1101,Wall Street,1987,1569,51 Birch Street,2006,FALSE
+1305,Raising Arizona,1987,2317,Raising Bertie,2017,FALSE
+1737,Dreamcatcher,2003,1787,Ratcatcher,2000,FALSE
+1403,Little Children,2006,2380,Arna's Children,2004,FALSE
+1193,In the Name of the Father,1993,822,In the Family,2012,FALSE
+1683,The One,2001,2792,The Oath,2010,FALSE
+2258,The Edge,1997,485,The Edge of Heaven,2008,FALSE
+0,The Shawshank Redemption,1994,1180,The Shawshank Redemption,1994,TRUE
+2096,The Manchurian Candidate,1962,60,The Manchurian Candidate,1962,TRUE
+2847,The Matador,2005,901,The Maid,2009,FALSE
+1673,A Prophet,2009,175,A Prophet,2010,TRUE
+1380,Babe,1995,742,Babe,1995,TRUE
+2138,Girl with a Pearl Earring,2003,2671,Girl with a Pearl Earring,2003,TRUE
+1624,The Omen,1976,537,The Sun,2009,FALSE
+750,Das Boot,1981,425,Das Boot,1982,TRUE
+412,The Thing,1982,1803,The Dog,2014,FALSE
+1024,Melancholia,2011,1087,Melancholia,2011,TRUE
+2480,Little Shop of Horrors,1986,976,Little Shop of Horrors,1986,TRUE
+1557,Under the Skin,2013,642,Under the Shadow,2016,FALSE
+1247,A Christmas Story,1983,1685,A Christmas Story,1983,TRUE
+981,Rushmore,1998,404,Rushmore,1998,TRUE
+1502,The Mexican,2001,2530,The Clan,2016,FALSE
+146,Argo,2012,434,Argo,2012,TRUE
+1694,Mr. Smith Goes to Washington,1939,2461,Can Mr. Smith Get to Washington Anymore?,2007,FALSE
+765,The Great Escape,1963,2139,The Great Flood,2014,FALSE
+2695,The Rocketeer,1991,2959,The Tracker,2004,FALSE
+113,The Hunger Games: Catching Fire,2013,1884,The Hunger Games: Catching Fire,2013,TRUE
+1259,This Is 40,2012,1950,This Is Congo,2018,FALSE
+266,Dallas Buyers Club,2013,651,Dallas Buyers Club,2013,TRUE
+1246,The Master,2012,901,The Maid,2009,FALSE
+2403,Control,2007,1520,Command and Control,2016,FALSE
+2893,Littleman,2006,2547,Little Feet,2014,FALSE
+2838,The Boxtrolls,2014,1973,The Boxer,1997,FALSE
+1643,The Cell,2000,2530,The Clan,2016,FALSE
+1834,Elektra,2005,929,Elena,2014,FALSE
+993,The Heat,2013,750,The Flat,2012,FALSE
+358,The Fighter,2010,2959,The Tracker,2004,FALSE
+1892,Maid in Manhattan,2002,729,Manhattan,1979,FALSE
+2226,The Craft,1996,750,The Flat,2012,FALSE
+2687,Frances Ha,2012,819,Frances Ha,2013,TRUE
+95,District 9,2009,1043,District 9,2009,TRUE
+2893,Littleman,2006,2257,Little Sister,2016,FALSE
+1173,Commando,1985,1520,Command and Control,2016,FALSE
+2554,The Possession,2012,1632,The Pool,2008,FALSE
+792,Airplane!,1980,1380,Airplane!,1980,TRUE
+543,The Graduate,1967,1635,The Graduate,1967,TRUE
+1922,John Tucker Must Die,2006,1630,Caesar Must Die,2013,FALSE
+2156,Go,1999,2629,Go,1999,TRUE
+2387,El Mariachi,1992,2417,El mariachi,1993,TRUE
+1281,The Hours,2002,549,Summer Hours,2009,FALSE
+1764,My Sister's Keeper,2009,2965,Mozart's Sister,2011,FALSE
+1937,Memories of Murder,2003,876,Memories of Murder,2005,TRUE
+2778,The East,2013,851,The Agronomist,2004,FALSE
+561,Panic Room,2002,1522,Panic,2001,FALSE
+2719,The Proposition,2005,2436,The Proposition,2006,TRUE
+288,The 40 Year Old Virgin,2005,2591,The 40 Year Old Virgin,2005,TRUE
+261,Harry Potter and the Deathly Hallows: Part 1,2010,1458,Harry Potter and the Half-Blood Prince,2009,FALSE
+1020,The Intern,2015,1728,The Hunter,2012,FALSE
+183,The Revenant,2015,877,The Return,2004,FALSE
+261,Harry Potter and the Deathly Hallows: Part 1,2010,352,Harry Potter and the Deathly Hallows: Part 2,2011,FALSE
+2880,The Beaver,2011,1728,The Hunter,2012,FALSE
+2388,The Gift,2000,750,The Flat,2012,FALSE
+1911,Crazy Heart,2009,665,Crazy Heart,2009,TRUE
+2584,The Rainmaker,1997,1973,The Boxer,1997,FALSE
+76,Gone Girl,2014,2562,Girl,2019,FALSE
+2112,Risky Business,1983,1957,Risky Business,1983,TRUE
+1227,Dial M for Murder,1954,2096,Dial M for Murder,1954,TRUE
+1368,Rope,1948,2570,Rope,1948,TRUE
