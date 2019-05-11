@@ -41,16 +41,16 @@ nav_order: 3
 <p></p>
 
 ## Estimating Accuracy
-- [Prediction List](Part3-EntityMatching/Prediction_List)
-- [Candidate Set](Part3-EntityMatching/Original_Candidate_Set)
-- [Table A](Part3-EntityMatching/IMDB)
-- [Table B](Part3-EntityMatching/Metacritic)
+- [Prediction List](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/docs/Part3-EntityMatching/Prediction_List)
+- [Candidate Set](https://raw.githubusercontent.com/Rohit--Sharma/CS839_DataScience/master/docs/Part3-EntityMatching/Original_Candidate_Set)
+- [Table A](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/docs/Part3-EntityMatching/IMDB)
+- [Table B](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/docs/Part3-EntityMatching/Metacritic)
 
 - Size of Candidate Set: `2997152`
 	- Candidate set is more than `500`
 	- [Computing Density of matches](Part3-EntityMatching/report.html)
-	- [Blocking Code](Part3-EntityMatching/blocker.ipynb)
-	- [Final Reduced set of Candidate Tuple Pairs](Part3-EntityMatching/Blocked_Candidate_Set)
-	- [Manually Labeled Tuple Pairs](Part3-EntityMatching/Labeled_final)
+	- [Blocking Code](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/docs/Part3-EntityMatching/blocker.ipynb)
+	- [Final Reduced set of Candidate Tuple Pairs](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/docs/Part3-EntityMatching/Blocked_Candidate_Set)
+	- [Manually Labeled Tuple Pairs](https://github.com/Rohit--Sharma/CS839_DataScience/blob/master/docs/Part3-EntityMatching/Labeled_final)
 	- Precision: [`0.9597402500318443 - 0.9986098101849362`]
 	- Recall: [`1.0 - 1.0`]
