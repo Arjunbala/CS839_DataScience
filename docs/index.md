@@ -33,5 +33,5 @@ Completed
 
 ### Stage 3: [Entity Matching using CloudMatcher](stage3.md)
 {: .d-inline }
-New
-{: .label .label-purple }
+Completed
+{: .label .label-green }

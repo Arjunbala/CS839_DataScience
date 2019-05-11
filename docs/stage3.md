@@ -39,3 +39,18 @@ nav_order: 3
 ![movies_matching](Part3-EntityMatching/movies_matching.png?raw=true "movies_matching")
 
 <p></p>
+
+## Estimating Accuracy
+- [Prediction List](Part3-EntityMatching/Prediction_List)
+- [Candidate Set](Part3-EntityMatching/Original_Candidate_Set)
+- [Table A](Part3-EntityMatching/IMDB)
+- [Table B](Part3-EntityMatching/Metacritic)
+
+- Size of Candidate Set: `2997152`
+	- Candidate set is more than `500`
+	- [Computing Density of matches](Part3-EntityMatching/report.html)
+	- [Blocking Code](Part3-EntityMatching/blocker.ipynb)
+	- [Final Reduced set of Candidate Tuple Pairs](Part3-EntityMatching/Blocked_Candidate_Set)
+	- [Manually Labeled Tuple Pairs](Part3-EntityMatching/Labeled_final)
+	- Precision: [`0.9597402500318443 - 0.9986098101849362`]
+	- Recall: [`1.0 - 1.0`]
